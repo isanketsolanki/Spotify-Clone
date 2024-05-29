@@ -2,7 +2,7 @@ console.log('Lets write JavaScript');
 let currentSong = new Audio();
 let songs;
 let currFolder;
-let token = "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";
+let token = process.env.GITHUB_TOKEN;
 
 function secondsToMinutesSeconds(seconds) {
     if (isNaN(seconds) || seconds < 0) {
