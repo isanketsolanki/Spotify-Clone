@@ -1,10 +1,11 @@
-const config = require('./config');
-let token = config.token;
+import { token } from './config.js';
 
 console.log('Lets write JavaScript');
 let currentSong = new Audio();
 let songs;
 let currFolder;
+
+console.log(token);  // Use the token as needed
 
 function secondsToMinutesSeconds(seconds) {
     if (isNaN(seconds) || seconds < 0) {
