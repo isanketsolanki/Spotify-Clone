@@ -166,24 +166,50 @@ async function main() {
         document.querySelector(".left").style.left = "-120%";
     });
 
-    // Add an event listener to previous
-    previous.addEventListener("click", () => {
+   // Function to extract file name from URL
+    function getFileName(url) {
+        // Decode the URL to handle special characters
+        let decodedUrl = decodeURIComponent(url);
+        // Extract the file name
+        return decodedUrl.split('/').pop();
+    }
+
+    // Define the playNext function
+    function playNext() {
         currentSong.pause();
-        console.log("Previous clicked");
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
-        if ((index - 1) >= 0) {
-            playMusic(songs[index - 1]);
+        let currentIndex = songs.indexOf(getFileName(currentSong.src));
+        if (currentIndex < songs.length - 1) {
+            let nextSong = songs[currentIndex + 1];
+            playMusic(nextSong);
+            console.log("Playing next song:", nextSong);
+        } else {
+            console.log("No next song available.");
         }
+    }
+
+    // Event listener for next button
+    next.addEventListener("click", () => {
+        console.log("Next button clicked");
+        playNext();
     });
 
-    // Add an event listener to next
-    next.addEventListener("click", () => {
+    // Define the playPrevious function
+    function playPrevious() {
         currentSong.pause();
-        console.log("Next clicked");
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
-        if ((index + 1) < songs.length) {
-            playMusic(songs[index + 1]);
+        let currentIndex = songs.indexOf(getFileName(currentSong.src));
+        if (currentIndex > 0) {
+            let previousSong = songs[currentIndex - 1];
+            playMusic(previousSong);
+            console.log("Playing previous song:", previousSong);
+        } else {
+            console.log("No previous song available.");
         }
+    }
+
+    // Event listener for previous button
+    previous.addEventListener("click", () => {
+        console.log("Previous button clicked");
+        playPrevious();
     });
 
     // Add an event to volume
