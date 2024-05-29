@@ -1,8 +1,10 @@
+const config = require('./config');
+let token = config.token;
+
 console.log('Lets write JavaScript');
 let currentSong = new Audio();
 let songs;
 let currFolder;
-let token = process.env.GITHUB_TOKEN;
 
 function secondsToMinutesSeconds(seconds) {
     if (isNaN(seconds) || seconds < 0) {
