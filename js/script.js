@@ -2,10 +2,12 @@ let currentSong = new Audio();
 let songs = [];
 let currentFolder = '';
 
+// GitHub JSON file URL
+const GITHUB_JSON_URL = "https://raw.githubusercontent.com/isanketsolanki/Spotify-Clone/main/albums.json"; // Replace <username> and <repository> with actual values.
+
 async function fetchAlbums() {
-    const url = 'albums.json';
     try {
-        let response = await fetch(url);
+        let response = await fetch(GITHUB_JSON_URL);
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
         let data = await response.json();
         return data;
