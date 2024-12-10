@@ -190,7 +190,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 95px;
+    bottom: 115px;
     right: 11px;
     opacity: var(--a);
     transition: all .5s ease-out;
