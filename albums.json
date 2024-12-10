@@ -1,0 +1,31 @@
+[
+    {
+      "folder": "Animal (2023)",
+      "title": "Animal (2023)",
+      "description": "Animal (2023) songs",
+      "cover": "songs/Animal (2023)/cover.jpg",
+      "tracks": [
+        { "name": "Hua Main", "file": "songs/Animal (2023)/01 - Hua Main (320 Kbps).mp3" },
+        { "name": "Satranga", "file": "songs/Animal (2023)/02 - Satranga (320 Kbps).mp3" },
+        { "name": "Papa Meri Jaan", "file": "songs/Animal (2023)/03 - Papa Meri Jaan (128 Kbps).mp3" },
+        { "name": "Arjan Vailly", "file": "songs/Animal (2023)/04 - Arjan Vailly (320 Kbps).mp3" },
+        { "name": "Pehle Bhi Main", "file": "songs/Animal (2023)/05 - Pehle Bhi Main (320 Kbps).mp3" },
+        { "name": "Saari Duniya Jalaa Denge", "file": "songs/Animal (2023)/07 - Saari Duniya Jalaa Denge (320 Kbps).mp3" }
+      ]
+    },
+    {
+      "folder": "Tu Jhoothi Main Makkar (2023)",
+      "title": "Tu Jhoothi Main Makkar (2023)",
+      "description": "Tu Jhoothi Main Makkar (2023) songs",
+      "cover": "songs/Tu Jhoothi Main Makkar (2023)/cover.jpg",
+      "tracks": [
+        { "name": "Tere Pyaar Mein", "file": "songs/Tu Jhoothi Main Makkar (2023)/01 - Tere Pyaar Mein (320 Kbps).mp3" },
+        { "name": "Pyaar Hota Kayi Baar Hai", "file": "songs/Tu Jhoothi Main Makkar (2023)/02 - Pyaar Hota Kayi Baar Hai (320 Kbps).mp3" },
+        { "name": "Show Me The Thumka", "file": "songs/Tu Jhoothi Main Makkar (2023)/03 - Show Me The Thumka (128 Kbps).mp3" },
+        { "name": "O Bedardeya", "file": "songs/Tu Jhoothi Main Makkar (2023)/04 - O Bedardeya (320 Kbps).mp3" },
+        { "name": "Jaadui", "file": "songs/Tu Jhoothi Main Makkar (2023)/05 - Jaadui (128 Kbps).mp3" },
+        { "name": "Maine Pi Rakhi Hai", "file": "songs/Tu Jhoothi Main Makkar (2023)/06 - Maine Pi Rakhi Hai (128 Kbps).mp3" }
+      ]
+    }
+  ]
+  
